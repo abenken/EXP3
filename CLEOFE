@@ -1,0 +1,49 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{ 
+	double arr[10];
+	int varia, maxvariai, minivaraiai;
+	double largesti, smallesti, total, average;
+	
+	cout << "Enter the 10 numbers! \n" ;
+	for ( varia = 0; varia < 10 ; varia++)
+		arr[varia] = 0.0;
+	for ( varia = 0; varia < 10 ; varia++)
+		cin >> arr[varia];
+		for ( varia = 0; varia < 10; varia++)
+		cout << arr[varia] << " " ;		
+	total = 0;
+		for (varia = 0 ; varia < 10; varia++)
+		total = total + arr [varia];
+		
+	cout << "\n\n" ;
+	cout << "The total of the 10 integers is: " << total << "!  ^.^ \n\n" ;
+	
+	average = 0;
+		for ( varia = 0; varia < 10 ; varia++)
+		average = total / 10;
+	
+	cout << "The average of the 10 integers is: " << average << "!  ^.^ \n\n" ;
+	
+	maxvariai = 0;
+		for ( varia = 1; varia < 10 ; varia++)
+		if (arr[maxvariai] < arr[varia] )
+			maxvariai = varia;
+	largesti = arr [maxvariai];
+	cout << "The largest integer is: " << largesti << "!  ^.^ \n\n";
+	
+	minivaraiai = 0;
+		for (varia = 1; varia < 10 ; varia++)
+		if (arr[minivaraiai] > arr [varia]) 
+		minivaraiai = varia;
+	
+	smallesti = arr[minivaraiai];
+	cout << "The smallest integer is: " << smallesti << "!  ^.^ \n\n" ;
+	
+	_getch();
+	return 0;	
+}
