@@ -1,0 +1,55 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	int varia;
+	double PosA[100], PosB[100], PosC[100];
+	cout << "Enter a temperature for a week of Province A, Province and then Province C. ^.^" << endl;
+	
+	{
+		cout << "\n" ;
+		for (varia = 1; varia <= 7; varia++)
+		{
+			cout << "Province A, Day " << varia << ": ";
+			cin >> PosA[varia];
+		}
+		cout << "\n" ;
+		for (varia = 1; varia <= 7; varia++)
+		{
+			cout << "Province B, Day " << varia << ": ";
+			cin >> PosB[varia];
+		}
+		cout << "\n" ;
+		for (varia = 1; varia <= 7; varia++)
+		{
+			cout << "Province C, Day " << varia << ": ";
+			cin >> PosC[varia];
+		}
+		cout << "\n" ;
+		cout << "Displaying Values:" << endl;
+		cout << "\n" ;
+		for (varia = 1; varia <= 7; varia++)
+		{
+			cout << "Province A, Day " << varia << "= ";
+			cout << PosA[varia] << "\n" ;
+		}
+		cout << "\n" ;
+		for (varia = 1; varia <= 7; varia++)
+		{
+			cout << "Province B, Day " << varia << "= ";
+			cout << PosB[varia] << "\n" ;
+		}
+		cout << "\n" ;
+		for (varia = 1; varia <= 7; varia++)
+		{
+			cout << "Province C, Day " << varia << "= ";
+			cout << PosC[varia] << "\n" ;
+		}
+	}
+		_getch();
+		return 0;
+	
+}
